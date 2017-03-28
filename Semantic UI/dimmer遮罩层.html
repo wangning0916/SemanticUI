@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>遮罩层dimmer</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/semantic.min.js"></script>
+</head>
+<body>
+	<!-- 标准 -->
+	<div class="ui segment">	
+		<h3 class="ui header">
+			可覆盖的部分
+		</h3>
+		<div class="ui small images">
+			<img>
+			<img>
+			<img>
+		</div>
+		<p></p>
+	</div>
+	<div class="ui show button plus1">
+		<i class="icon plus"></i>
+	</div>
+</body>
+	<script type="text/javascript">
+		$(".ui.plus1").click(function(event) {
+			$('.ui.segment').dimmer('toggle');
+		});
+		
+		
+	</script>
+</html>

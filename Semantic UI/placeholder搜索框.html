@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>搜索框input</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/semantic.min.js"></script>
+	<style type="text/css">
+		#field1::-webkit-input-placeholder { color:red; }
+		.field2::-webkit-input-placeholder { color:red; }
+		input::-webkit-input-placeholder { color:red; }
+
+		.field2::-moz-input-placeholder { color:red; }
+		input::-moz-input-placeholder { color:red; }
+	</style>
+</head>
+<body style="margin:30px;">
+	<!-- 标准输入框 -->
+	<div class="ui input"><input type="text" placeholder="输入......" id="field1"></div>
+	<div class="ui input"><input type="text" placeholder="输入......" class="field2"></div>
+	<div class="ui input"><input type="text" placeholder="输入......"></div>	
+</body>
+</html>

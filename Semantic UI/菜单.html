@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>揭示reveal</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/semantic.min.js"></script>
+</head>
+<body style="margin:30px;">
+	<div class="ui tiered menu">
+  <div class="menu">
+    <a class="active item">
+      <i class="users icon"></i>
+      好友
+    </a>
+    <a class="item">
+      <i class="grid layout icon"></i> 浏览器
+    </a>
+    <a class="item">
+      <i class="mail icon"></i> 信息
+    </a>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui icon input">
+          <input type="text" placeholder="搜索...">
+          <i class="search icon"></i>
+        </div>
+      </div>
+      <div class="ui dropdown item">
+        更多 <i class="icon dropdown"></i>
+        <div class="menu">
+          <a class="item"><i class="edit icon"></i> 修改资料</a>
+          <a class="item"><i class="globe icon"></i> 选择语言</a>
+          <a class="item"><i class="settings icon"></i> 账户设置</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui sub menu">
+    <a class="active item">搜索</a>
+    <a class="item">添加</a>
+    <a class="item">移除</a>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+	$('.ui.dropdown').dropdown();
+</script>
+</html>

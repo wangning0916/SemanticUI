@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>下拉菜单</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/semantic.js"></script>
+</head>
+<body>
+	<div class="ui inline dropdown">
+		<input type="hidden" name="gender">
+		<div class="text">一级</div> <i class="dropdown icon"></i>
+		<div class="menu">
+			<div class="item"> <i class="dropdown icon"></i>
+				<span class="text">二级</span>
+				<div class="menu">
+					<div class="item">二级内容</div>
+					<div class="item">
+						<i class="dropdown icon"></i>
+						<span class="text">二级内容</span>
+						<div class="menu">
+							<div class="item">三级内容</div>
+							<div class="item">三级内容</div>
+						</div>
+					</div>
+					<div class="item">二级内容</div>
+				</div>
+			</div>
+			<div class="item">
+				<i class="dropdown icon"></i>
+				<span class="text">二级</span>
+				<div class="menu">
+					<div class="item">二级内容</div>
+					<div class="item">二级内容</div>
+					<div class="item">二级内容</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">$('.ui.dropdown').dropdown({
+    on: 'click'
+  });</script>
+</html>

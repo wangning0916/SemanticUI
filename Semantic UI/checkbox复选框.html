@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>复选框checkbox</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/semantic.min.js"></script>
+</head>
+<body>
+	<!-- 标准 -->
+	<div class="ui checkbox" id="demo">
+		<input type="checkbox" name="fun">
+		<label>让轮廓清晰可见</label>
+	</div>
+	<!-- 滑块 -->
+	<div class="ui slider checkbox">
+		<input type="checkbox" name="newsletter">
+		<label>接受条款和条件</label>
+	</div>
+	<!-- 切换 -->
+	<div class="ui toggle checkbox">
+		<input type="checkbox" name="public">
+		<label>订阅新闻周刊</label>
+	</div>
+	<!-- 单选框 -->
+	<div class="ui form">
+		<div class="grouped inline fields">
+			<div class="field">
+				<div class="ui radio checkbox">
+					<input type="radio" name="fruit" checked="checked">
+					<label>每周一次</label>
+				</div>
+			</div>
+			<div class="field">
+				<div class="ui radio checkbox">
+					<input type="radio" name="fruit">
+					<label>2-3 周一次</label>
+				</div>
+			</div>
+			<div class="field">
+				<div class="ui radio checkbox">
+					<input type="radio" name="fruit">
+					<label>每日一次</label>
+				</div>
+			</div>
+			<div class="field">
+				<div class="ui radio checkbox">
+					<input type="radio" name="fruit">
+					<label>每周两次</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 只读 -->
+	<div class="ui read-only checkbox">
+		<input type="checkbox">
+		<label>只读</label>
+	</div>
+	<!-- 禁用 复选框可以在隐藏的输入框中设置禁用的属性，或者在 ui checkbox 中使用disabled类来设置禁用。-->
+	<div class="ui disabled checkbox">
+		<input type="checkbox">
+		<label>禁用</label>
+	</div>
+	<div class="ui toggle checkbox">
+		<input type="checkbox" disabled="disabled">
+		<label>禁用</label>
+	</div>
+	<!-- 变化 -->
+	<div class="ui left floated segment">
+		<div class="ui fitted checkbox">
+			<input type="checkbox">
+			<label></label>
+		</div>
+	</div>
+	<div class="ui left floated segment">
+		<div class="ui fitted slider checkbox">
+			<input type="checkbox">
+			<label></label>
+		</div>
+	</div>
+	<div class="ui left floated segment">
+		<div class="ui fitted toggle checkbox">
+			<input type="checkbox">
+			<label></label>
+		</div>
+	</div>
+	<!-- 切换事件-->
+	<div class="ui toggle button">切换</div>
+	<div class="ui positive check button">选择</div>
+	<div class="ui negative uncheck button">取消</div>
+</body>
+	<script type="text/javascript">
+		//初始化
+		$('.ui.checkbox').checkbox();
+		//让用户可选，但无法取消，使用uncheckable设置。
+		$('#demo').checkbox({
+			uncheckable: false
+		});
+		// 附加事件
+		$('.checkbox').checkbox('attach events', '.toggle.button');
+		$('.checkbox').checkbox('attach events', '.check.button', 'check');
+		$('.checkbox').checkbox('attach events', '.uncheck.button', 'uncheck');
+	</script>
+</html>
